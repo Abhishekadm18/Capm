@@ -1,0 +1,46 @@
+### GET
+GET http://localhost:4004/odata/v4/employee/Employees
+
+### Create 
+POST http://localhost:4004/odata/v4/employee/Employees
+Content-Type: application/json
+
+{
+     "ID": 104,
+      "Name": "Shubham Lanje",
+      "Email": "Shubham@gmail.com",
+      "Manager": "Madhav"
+}
+
+### 
+POST http://localhost:4004/odata/v4/employee/Employees
+Content-Type: application/json
+
+{
+     "ID": 105,
+      "Name": "Krishna",
+      "Email": "Krishna@gmail.com",
+      "Manager": "Salil"
+}
+
+### Update
+PATCH  http://localhost:4004/odata/v4/employee/Employees/105
+Content-Type: application/json
+
+{
+      "Name": "Krishna Vairal"
+}
+
+###
+POST http://localhost:4004/odata/v4/employee/Employees
+Content-Type: application/json
+
+{
+     "ID": 106,
+      "Name": "Karthik",
+      "Email": "Karthik@gmail.com",
+      "Manager": "Abhijeet"
+}
+
+###
+DELETE  http://localhost:4004/odata/v4/employee/Employees/106
